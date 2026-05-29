@@ -29,6 +29,7 @@ jobs:
       - name: Prepare build
         run: npm run build
   deploy:
+    needs: [test, lint, buildnpm]
     runs-on: ubuntu-latest
     steps:
       - name: Get code
