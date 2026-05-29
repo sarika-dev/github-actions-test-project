@@ -1,7 +1,7 @@
 import React from "react";
 import { render, screen, fireEvent } from "@testing-library/react";
 import "@testing-library/jest-dom/extend-expect";
-import App from "../components/app.jsx"; // Adjust the import path as necessary
+import App from "../App";
 
 test("rendersAppWithoutCrashing", () => {
   render(<App />);
