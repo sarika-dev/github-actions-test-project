@@ -7,4 +7,4 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Get Issue Details
-        run: echo  "A new issue was opened ${{ github.event.issue }}"
+        run: echo  "A new issue was opened ${{ toJSON(github.event.issue) }}"
