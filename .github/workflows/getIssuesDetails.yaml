@@ -1,0 +1,10 @@
+name: Get Issue Details
+on:
+  issues:
+    types: [opened]
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Get Issue Details
+        run: echo  "A new issue was opened ${{ github.event.issue }}"
